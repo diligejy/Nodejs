@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {          // ❶ 컴파일러 옵션 
+      "module": "CommonJS", // ❷ 모듈 시스템 
+      "target": "ESNEXT",        // ❸ 사용할 ES 버전
+      "experimentalDecorators": true,  // ❹ 데코레이터를 사용할지 여부
+      "emitDecoratorMetadata": true    // ❺ 데코레이터의 메타 데이터를 같이 내보낼지 여부
+    }
+}

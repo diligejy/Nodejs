@@ -1,0 +1,8 @@
+POST http://localhost:3000/file-upload  #<!-- ❶ 요청 방식 및 URL 선언 -->
+Content-Type: multipart/form-data; boundary=test-file-upload # ❶❷ Content-Type과 boundary 설정 
+
+--test-file-upload # ❷❸ 파일 매개변수 정보 시작 
+Content-Disposition: form-data; name="file"; filename="test.txt" # ❸❹ 파일의 정보 
+
+여기에 텍스트 파일의 내용을 넣을 수 있습니다. #❹❺ 파일의 내용
+--test-file-upload-- # ❺❻ 파일 매개변수 정보 종료
